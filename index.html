@@ -1,1 +1,244 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CareLoop Notes is a mobile note-taking application for ABA professionals and care teams.">
+<title>CareLoop Notes | Simple, Mobile Documentation</title>
+
+<style>
+:root {
+  --blue: #18365d;
+  --gold: #e9b949;
+  --cream: #faf8f2;
+  --text: #263449;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: white;
+}
+header {
+  background: var(--blue);
+  color: white;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo { font-size: 25px; font-weight: bold; }
+.logo span { color: var(--gold); }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+.hero {
+  background: var(--cream);
+  padding: 85px 8%;
+  text-align: center;
+}
+.hero h1 {
+  color: var(--blue);
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  font-size: 19px;
+}
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: #24344a;
+  padding: 14px 27px;
+  border-radius: 7px;
+  font-weight: bold;
+  text-decoration: none;
+}
+section { padding: 65px 8%; }
+h2 {
+  color: var(--blue);
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0;
+}
+.intro {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+.features {
+  background: var(--cream);
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 35px auto 0;
+}
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border-bottom: 4px solid var(--gold);
+}
+.feature h3 { color: var(--blue); }
+.privacy {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.contact {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+}
+.contact h2 { color: white; }
+.contact a { color: var(--gold); }
+footer {
+  padding: 25px 8%;
+  text-align: center;
+  background: #122944;
+  color: white;
+  font-size: 13px;
+}
+footer a { color: var(--gold); margin: 0 8px; }
+@media(max-width:600px) {
+  nav { width: 100%; margin-top: 15px; }
+  nav a { margin: 0 12px 0 0; }
+  .hero { padding: 60px 6%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">CareLoop <span>Notes</span></div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero">
+  <h1>Better Notes.<br>More Time for Care.</h1>
+  <p>
+    CareLoop Notes is a mobile note-taking application
+    built to make documentation simpler for ABA
+    professionals and care teams.
+  </p>
+  <a class="button" href="#contact">Discover CareLoop Notes</a>
+</div>
+
+<section>
+  <div class="intro">
+    <h2>Documentation Made Simpler</h2>
+    <p>
+      CareLoop Notes provides a straightforward way
+      to capture information while working with clients.
+      Use voice notes or type entries directly into
+      your mobile device.
+    </p>
+    <p>
+      Spend less time managing notes and more time
+      focused on the people receiving care.
+    </p>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2>Features</h2>
+  <div class="feature-grid">
+
+    <div class="feature">
+      <h3>Voice Notes</h3>
+      <p>
+        Record spoken notes and use transcription
+        to turn your audio into written documentation.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Manual Notes</h3>
+      <p>
+        Type and save notes directly from your
+        mobile device.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Simple Organization</h3>
+      <p>
+        Keep your documentation organized within
+        the application.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Mobile Access</h3>
+      <p>
+        Capture information while working in
+        your everyday care environment.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="privacy">
+    <h2>Privacy and Data Protection</h2>
+    <p>
+      We take the handling of user information seriously.
+      Please review our Privacy Policy for details about
+      information collection, storage, retention and sharing.
+    </p>
+    <p>
+      <a href="PRIVACY_POLICY_URL">Read the CareLoop Privacy Policy</a>
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Discover CareLoop Notes</h2>
+  <p>
+    Find out how CareLoop Notes can support your
+    everyday documentation process.
+  </p>
+  <p>
+    <a class="button" href="APP_STORE_URL">
+      View on the Apple App Store
+    </a>
+  </p>
+  <p>Questions or support? Contact us:</p>
+  <p><a href="mailto:YOUR_SUPPORT_EMAIL">Email CareLoop Support</a></p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 CareLoop Notes. All rights reserved.</p>
+  <p>
+    <a href="PRIVACY_POLICY_URL">Privacy Policy</a>
+    |
+    <a href="mailto:YOUR_SUPPORT_EMAIL">Support</a>
+  </p>
+</footer>
+
+</body>
+</html>
+
